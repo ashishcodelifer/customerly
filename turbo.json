@@ -1,15 +1,9 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
+  "tasks": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "dist/**",
-        ".next/**",
-        "!.next/cache/**"
-      ]
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
     "dev": {
       "cache": false,
@@ -21,8 +15,5 @@
     "db:push": {},
     "db:studio": {}
   },
-  "globalEnv": [
-    "DATABASE_URL",
-    "NEXTAUTH_SECRET"
-  ]
+  "globalEnv": ["DATABASE_URL", "NEXTAUTH_SECRET"]
 }

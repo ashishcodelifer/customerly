@@ -1,0 +1,11 @@
+{
+  "root": true,
+  "extends": [
+    "prettier"
+  ],
+  "ignorePatterns": [
+    "**/dist/**",
+    "**/node_modules/**",
+    "**/.turbo/**"
+  ]
+}

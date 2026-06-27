@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "ES2022"
+    ],
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@customerly/db": [
+        "packages/db/src"
+      ],
+      "@customerly/ui": [
+        "packages/ui/src"
+      ],
+      "@customerly/integrations": [
+        "packages/integrations/src"
+      ],
+      "@customerly/design-tokens": [
+        "packages/design-tokens"
+      ]
+    }
+  }
+}

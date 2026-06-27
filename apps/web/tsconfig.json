@@ -1,0 +1,12 @@
+{
+  "extends": "@customerly/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@customerly/db": ["../../packages/db/src"],
+      "@customerly/design-tokens": ["../../packages/design-tokens"],
+      "@customerly/integrations": ["../../packages/integrations/src"]
+    }
+  }
+}
